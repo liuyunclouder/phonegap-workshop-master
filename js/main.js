@@ -23,7 +23,6 @@ var app = {
 
     initialize: function() {
         this.store = new MemoryStore(function() {
-            alert('I am from browser!');
             self.showAlert('Store Initialized', 'Info');
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
